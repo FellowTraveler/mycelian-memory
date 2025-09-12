@@ -79,7 +79,7 @@ Mycelian takes inspiration from this natural interconnectedness for AI agents. T
 
 As of 09-11-2025, I worked on problem disambiguation, architecture, specs, designs and provided oversight to the models for producing functional and good quality code. I did one quick pass to get it ready for this early open source release to gather developer feedback. 
 
-The next highest priority task is to systematiclly improve projects design using LongMemEval as the North Star. Prioritizing this over a through code review because I believe it will help me identify critical unknown-unknowns that will have a major impact on the design. Don't want to make throwaway code reliable at this point. Having said that I will keep the main branch stable to testing and experimentation.
+The next highest priority task is to systematiclly improve projects design using LongMemEval as the North Star. Prioritizing this over a through code review because I believe it will help me identify critical unknown-unknowns that will have a major impact on the design. Don't want to productionize experimental code prematurely. Having said that I will keep the main branch stable to testing and experimentation.
 
 Majority of the code was written by o3 and gpt5-high models, followed by Claude Opus and Sonnet 4.1 series models.
  
