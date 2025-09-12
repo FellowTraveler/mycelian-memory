@@ -61,7 +61,7 @@ flowchart TD
 - **Retrieves context** using hybrid search across memory entries and context shards
 - **Maintains fidelity** by avoiding lossy summarization chains and graph-based memory complexity
 - **Runs locally but designed to run anywhere** with self‑hostable Go backend and pluggable storage/vector database support.
-- **Tested for memory recall** using the MemGPT/MSC-Self-Instruct benchmark dataset (see `tools/benchmarker/`)
+- **Under Active Evaluation and Tune-up** using the [LongMemEval](https://github.com/xiaowu0162/LongMemEval/tree/main) benchmark ([dev-branch](https://github.com/mycelian-ai/mycelian-memory/tree/longmem-langgraph-eval))
 
 ### Is Mycelian inspired by Mycelium? - Yes :)
 
@@ -75,12 +75,14 @@ Mycelian takes inspiration from this natural interconnectedness for AI agents. T
 
 🚨 🚧 🏗️ **This project is under active development and not yet production‑ready.**
 
-🤖 **AI-Assisted Development**: I (@sam33rch) have created this codebase using AI development tools, specifically **Cursor**, **Claude Code**, and **Kiro**. Part of the motivation is learning to build production-level code with AI while exploring what techniques work best.
+🤖 **AI-Assisted Development**: I (@sam33rch) have created this codebase using AI development tools, specifically **Cursor**, **Claude Code**, and **Codex**. Part of the motivation is learning to build production-level code with AI while exploring what techniques work best.
 
-As of 08-24-2024, I've been actively developing this project for ~5 weeks. I worked on problem disambiguation, architecture, specs, designs and provided oversight to the models for producing functional and good quality code. I did one quick pass to get it ready for this early open source release to gather developer feedback. The next step is to perform a thorough code review to improve the code quality.
+As of 09-11-2025, I worked on problem disambiguation, architecture, specs, designs and provided oversight to the models for producing functional and good quality code. I did one quick pass to get it ready for this early open source release to gather developer feedback. 
 
- Majority of the code was written by o3 and gpt5-high models, followed by Claude Sonnet 4.
+The next highest priority task is to systematiclly improve projects design using LongMemEval as the North Star. Prioritizing this over a through code review because I believe it will help me identify critical unknown-unknowns that will have a major impact on the design. Don't want to make throwaway code reliable at this point. Having said that I will keep the main branch stable to testing and experimentation.
 
+Majority of the code was written by o3 and gpt5-high models, followed by Claude Opus and Sonnet 4.1 series models.
+ 
 📚 **Learning Journey**: This is my first Go project, so I'm learning idiomatic Go patterns as I build. The code is functional but far from perfect, I'm currently focused on improving reliability. I invite the Gopher community to help make this project better through feedback, contributions, and guidance.
 
 You'll find detailed AI development methodologies and techniques that have worked well documented in [docs/coding-stds/ai-coding-best-practices.md](docs/coding-stds/ai-coding-best-practices.md), and I'll continue updating these insights as the project evolves.
