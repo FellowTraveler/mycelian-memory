@@ -160,3 +160,17 @@ huey_orchestrator.log
 memory-bank/
 .cursor/
 .cursorignore
+
+# LongMemEval Benchmarker (top-level path) — ignore local outputs and datasets
+longmemeval-benchmarker/out/
+longmemeval-benchmarker/huey_orchestrator/out/
+longmemeval-benchmarker/data/
+longmemeval-benchmarker/data/*.db*
+longmemeval-benchmarker/huey_orchestrator/data/*.db*
+longmemeval-benchmarker/huey_orchestrator.log
+longmemeval-benchmarker/todo
+longmemeval-benchmarker/logs/
+longmemeval-benchmarker/logs/*/
+longmemeval-benchmarker/*.log
+longmemeval-benchmarker/longmemeval-local-datasets/
+longmemeval-benchmarker/config-local/
